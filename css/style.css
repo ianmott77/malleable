@@ -1,0 +1,413 @@
+/*************SLIDER**************/
+[data-malleable] [data-slider] {
+    height: 10px;
+    position: relative;
+}
+
+[data-toggle], [data-control]{
+    display: inline-block;
+}
+
+[data-malleable] [data-slider="seek"] {
+    width: 100%;
+}
+
+[data-malleable] [data-slider="setVolume"] {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+[data-malleable] [data-max-value],
+[data-malleable] [data-loaded-value],
+[data-malleable] [data-current-value],
+[data-malleable] [data-seek-value],
+[data-malleable] [data-hover-cursor] {
+    position: absolute;
+    height: 100%;
+}
+
+[data-malleable] [data-max-value],
+[data-malleable] [data-loaded-value] {
+    border-radius: 10px;
+}
+
+[data-malleable] [data-current-value] {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+[data-malleable] [data-max-value] {
+    width: 100%;
+    overflow: hidden;
+}
+
+[data-malleable] [data-seek-value] ,[data-malleable] [data-hover-cursor]{
+    width: 1px;
+    margin-left: -1px;
+}
+
+[data-malleable] [data-hover-content]{
+    position: absolute;
+}
+
+[data-malleable] [data-player-wrapper] {
+    width: 85%;
+    display: inline-block;
+}
+
+[data-malleable] [data-current-hover]{
+    position: relative;
+    margin-top: -65%;
+    margin-left: -50%;
+    border-radius: 5px;
+    max-width: 200px;
+}
+
+[data-malleable] [data-seek-wrapper] {
+    width: 100%;
+}
+
+/***********END SLIDER************/
+
+/***********FULLSCREEN************/
+[data-malleable]:-webkit-full-screen  {
+    position: absolute;
+    background-color: white;
+}
+
+[data-malleable]:-webkit-full-screen [data-video-player] {
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+    position: absolute;
+}
+
+[data-malleable]:-webkit-full-screen [data-control="media-background"]{
+    width: 100%;
+    position: absolute;
+    max-width: unset;
+}
+
+[data-malleable]:-webkit-full-screen [data-control="media-background"] img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: unset;
+    max-height: 100%;
+}
+
+[data-malleable]:-webkit-full-screen [data-info="time-preview"] {
+    margin-bottom: 12pt;
+}
+
+[data-malleable]:-webkit-full-screen [data-video-preview]{
+    position: relative;
+}
+
+[data-malleable]:-webkit-full-screen [data-control="visualization-canvas"]{
+    position: relative;
+}
+
+[data-malleable]:-webkit-full-screen [data-player-wrapper]{
+    width: 90%;
+    margin-left: 5%;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 20px;
+    padding: 5px;
+}
+
+/*********END FULLSCREEN**********/
+
+/************POPOVER**************/
+
+[data-malleable] [data-popover-content] {
+    position: absolute;
+}
+
+/**********END POPOVER************/
+
+/************MEDIA BACKGROUND**************/
+
+[data-malleable] [data-control="media-background"]{
+    position: relative;
+    max-width: 15%;
+}
+
+[data-malleable] [data-control="media-background"] img {
+    max-width: 50px;
+}
+
+[data-malleable] [data-control="media-background"] img[alt="no-image"]{
+    display: none;
+}
+
+/**********END MEDIA BACKGROUND************/
+
+/**********VISUALIZER LIST/PLAYLIST************/
+
+[data-malleable] [data-control="show_playlist"], [data-malleable] [data-control="show_visualizer"] {
+    outline: none;
+}
+
+[data-malleable] [data-playlist-wrap],
+[data-malleable] [data-visualization-wrap]{
+    list-style: none;
+    padding: 0;
+}
+[data-malleable] [data-playlist-wrap] ul, [data-malleable] [data-visualization-wrap] ul{
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
+    list-style: none;
+}
+
+[data-malleable] [data-playlist-item] div {
+    display: inline-block;
+}
+
+/********END VISUALIZER LIST/PLAYLIST**********/
+
+/**********VISUALIZER************/
+
+[data-malleable] [data-control="visualization-canvas"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/********END VISUALIZER**********/
+
+/**********HOVER PREVIEW************/
+
+[data-malleable] [data-info="time-preview"]{
+    text-align: center;
+    font-size: 12pt;
+}
+
+[data-malleable] [data-video-preview]{
+    max-width: 100%;
+    position: relative;
+    margin-top: -6pt;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+[data-audio-player] ~ .top-wrap [data-hover-content] [data-current-hover] {
+    margin-left: -100%;
+}
+
+/********END HOVER PREVIEW**********/
+
+/**********GENERAL************/
+
+[data-malleable] .hide {
+    display: none !important;
+}
+
+[data-malleable] .control {
+    display: inline-block;
+}
+
+[data-malleable] .icon{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+[data-malleable] video {
+    margin-top: -100%;
+    max-width: 100%
+}
+
+[data-malleable] .top-wrap {
+    width: 100%;
+    margin-left: 5px;
+}
+
+[data-malleable] .seek-container {
+    min-width: 68%;
+}
+
+[data-malleable] .controller {
+    width: 100%;
+}
+
+[data-malleable] .track-thumb{
+    max-width: 50px;
+    display: inline-block
+}
+[data-malleable] .track-thumb img{
+    max-width: 100%;
+}
+
+[data-malleable] [data-playlist-controls-wrap]{
+    position: relative;
+    width: 100%;
+}
+
+/********END GENERAL**********/
+
+/********MEDIA INFO***************/
+
+[data-malleable] [data-info="current-time"], [data-malleable] [data-info="remaining-time"] {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 13%;
+}
+
+[data-malleable] [data-info="track-info"]{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/******END MEDIA INFO*************/
+
+/******LOADING*****/
+@-webkit-keyframes loading {
+	from {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        transform: translateX(0)
+	}
+	to { 
+        -webkit-transform: translateX(46px);
+        -moz-transform: translateX(46px);
+        transform: translateX(46px);
+	}
+}
+
+[data-malleable] [data-loading] [data-slider="seek"] [data-max-value] {
+    -webkit-animation-name: loading;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: loading;
+    -moz-animation-duration: .6s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    animation-name: loading;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 10px;
+    width: 200%;
+    margin-left: -10%;
+}
+
+[data-malleable] [data-loading] [data-slider="seek"] {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+[data-malleable] [data-loading] [data-loaded-value] {
+    display: none;
+}
+/******************/
+
+/*********COLOR SCHEME********/
+[data-malleable] [data-loading] [data-slider="seek"] [data-max-value] {
+    background: repeating-linear-gradient(
+        -55deg, 
+        rgb(122, 117, 117),   
+        rgb(122, 117, 117) 10px,
+        rgb(155, 104, 104) 10px,
+        rgb(155, 104, 104) 20px
+    );
+}
+
+[data-malleable]:-webkit-full-screen [data-player-wrapper]{
+    background: white;
+}
+
+[data-malleable] [data-current-value] {
+    background: green;
+}
+
+[data-malleable] [data-seek-value]{
+    background: orange;
+}
+
+[data-malleable] [data-hover-cursor]{
+    background-color: purple;
+}
+
+[data-malleable] [data-current-hover]{
+    background-color: #55aaf1c4;
+    color: white;
+}
+
+[data-malleable] [data-loaded-value] {
+    background: lightgray;
+    opacity: 0.5;
+}
+
+[data-malleable] [data-max-value] {
+    background: blue;
+}
+
+[data-malleable] [selected="true"]{
+    color: orange !important;
+}
+
+[data-malleable] [data-playlist-wrap],
+[data-malleable] [data-visualization-wrap]{
+    color: white;
+}
+
+[data-malleable] [data-popover-content] {
+    background: black;
+}
+
+/*******END COLOR SCHEME******/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    [data-malleable] [data-player-wrapper] {
+        width: 90%;
+    }
+    [data-malleable] .seek-container {
+        min-width: 77%;
+    }
+    [data-malleable] [data-info="track-info"]{
+        max-width: 40%;
+    }
+    [data-malleable] [data-slider="setVolume"] {
+        width: 12%;
+    }
+ }
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    [data-malleable] [data-player-wrapper] {
+        width: 93%;
+    }
+    [data-malleable] .seek-container{
+        min-width: 83%;
+    }
+    [data-malleable] [data-info="track-info"]{
+        max-width: 47%;
+    }
+    [data-malleable] [data-slider="setVolume"] {
+        width: 15%;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    [data-malleable] [data-player-wrapper] {
+        width: 94%;
+    }
+
+    [data-malleable] .seek-container {
+        min-width: 87%;
+    }
+
+    [data-malleable] [data-info="track-info"]{
+        max-width: 57%;
+    }
+}

@@ -1,0 +1,235 @@
+[data-malleable] .topWrap{
+    display: inline-block;
+    width: 100%;
+    margin-left: -75px;
+}
+
+[data-malleable] .top-half {
+    display: inline;
+    font-size: 24px;
+    text-align: center;
+}
+
+[data-malleable] [data-info=track-info]{
+    display: block !important;
+    min-height: 40px;
+    width: auto;
+    text-align: left;
+    margin-left: 95px;
+}
+
+[data-malleable] .control.time{
+    font-size: 18px
+}
+
+[data-malleable] [data-slider] {
+    height: 20px;
+}
+
+[data-malleable]{
+    font-size: 20px;
+}
+
+[data-malleable] .media-player{
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    left:0;
+    background: white;
+    margin-block-end: 10px;
+}
+
+[data-malleable] .control-bar-wrap{
+    width: 100%;
+    display: block;
+    height: 50px;
+    font-size: 25px;
+    background: white;
+    margin-top: -10px;
+}
+
+[data-malleable] .control-bar-wrap .playlist-controls{
+    display: inline-block;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    width: 40%;
+    text-align: center;
+}
+
+[data-malleable] .control-bar-wrap ion-icon{
+    padding: 2.5px;
+}
+
+[data-malleable]:-webkit-full-screen .media-player{
+    height: 85px;
+}
+
+[data-malleable]:-webkit-full-screen [data-control="media-background"] {
+    width: 100%;
+    height: 85%;
+    position: fixed;
+    max-width: unset;
+    top: 0;
+    z-index: -1;
+}
+
+[data-malleable]:-webkit-full-screen [data-control="media-background"] img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+[data-malleable]:-webkit-full-screen .top-half{
+    width: 100%;
+    background: white;
+}
+
+[data-malleable]:-webkit-full-screen .topWrap{
+    margin-left: 0;
+    background: white;
+}
+
+[data-malleable]:-webkit-full-screen .bottom-half{
+    background: white
+}
+
+[data-malleable] .middle-controls{
+    display: inline-block;
+}
+
+[data-malleable] .right-controls{
+    float: right;
+    margin-left: -100%;
+}
+
+[data-malleable] .playlist-item{
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    min-height: 75px;
+}
+
+[data-malleable] .playlist-item-controls{
+    position: relative;
+    text-align: center;
+}
+
+[data-malleable]:-webkit-full-screen .playlist-wrap{
+    background: white;
+}
+
+[data-malleable] .playlist-wrap {
+    overflow-y: scroll;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+[data-info="playlist"] li {
+    border-bottom: 1px solid;
+    margin-bottom: 2.5px;
+    padding-bottom: 2.5px;
+}
+
+[data-malleable] .reorder{
+    float: left;
+    font-size: 55px;
+}
+
+[data-malleable] .artwork-thumbnail {
+    float: left;
+}
+
+[data-malleable] .artwork-thumbnail img {
+    max-width: 75px;
+}
+
+[data-control="play_item"] {
+    display: block;
+    font-size: 18px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 80%;
+    position: relative;
+    left: 5px;
+}
+
+[data-control="play_item"] .item-artist{
+    font-size: 14px
+}
+
+[data-control="remove_item"] {
+    float: right;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+[data-malleable] .bottom-half{
+    text-align: center;
+    vertical-align: bottom;
+    margin-left: -15px;
+}
+
+[data-malleable] .volume-control{
+    display: inline-block;
+    left: 0;
+    width: 30%;
+    text-align: center;
+}
+
+[data-malleable] .volume-controller {
+    width: 47%;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+[data-malleable] .topWrap ion-icon {
+    font-size: 25px;
+    padding: 5px;
+}
+
+[data-info="playlist"]{
+    list-style: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    background: white;
+    z-index: 1;
+    padding-bottom: 150px; /*height of .meddia-player + .control-bar*/
+}
+
+
+[data-malleable] [data-control="media-background"] img {
+    width: 100%;
+    max-width: unset;
+}
+
+[data-malleable] [data-control="media-background"] {
+    position: relative;
+    max-width: unset;
+    overflow: hidden;
+    width: 75px;
+    min-height: 80px;
+    margin-bottom: -45px;
+}
+
+[data-malleable] [data-info="track-info"] {
+    display: inline-block;
+    min-height: 40px;
+    width: auto;
+}
+
+[data-malleable] [data-info="track-info"] [data-info="name"]{
+    font-size: 18px;
+}
+[data-malleable] [data-info="track-info"] [data-info="artist"]{
+    font-size: 14px;
+}
